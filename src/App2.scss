@@ -1,0 +1,36 @@
+button {
+    cursor: pointer !important;
+  }
+  
+  .timers-control button {
+    margin: 5px;
+  }
+  
+  .timer {
+    display: flex;
+    align-items: stretch;
+    margin: 5px;
+    
+    .time {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 160px;
+      border: 1px solid #6c757d;
+      border-right: none;
+      border-radius: .25rem 0 0 .25rem;
+      font-family: monospace;
+      font-size: 20px;
+    }
+    
+    .controls {
+      .btn:focus {
+        box-shadow: none !important;
+      }
+  
+      .btn:first-child {
+        border-radius: 0 !important;
+      }
+    }
+  }
+  
