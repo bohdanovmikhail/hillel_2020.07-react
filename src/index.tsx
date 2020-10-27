@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App1 from './App';
 import App2 from './App2';
+import { AppFN, AppClass } from './App3';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App1 /> */}
-    <App2 />
+    {/* <App2 /> */}
+    {/* <AppFN /> */}
+    <AppClass />
   </React.StrictMode>,
   document.getElementById('root')
 );
