@@ -50,21 +50,21 @@ export class Timer extends React.Component<Props, State> {
     private controls() {
         return (
             <div className="btn-group controls">
-                <button className="btn btn-secondary play" onClick={this.start}>
-                    <i className="fas fa-play"></i>
-                </button>
+            <button className="btn btn-secondary play" onClick={this.start}>
+                <i className="fas fa-play"></i>
+            </button>
 
-                <button className="btn btn-secondary pause" onClick={this.stop}>
-                    <i className="fas fa-pause"></i>
-                </button>
+            <button className="btn btn-secondary pause" onClick={this.stop}>
+                <i className="fas fa-pause"></i>
+            </button>
 
-                <button className="btn btn-secondary reset" onClick={this.reset}>
-                    <i className="fas fa-redo-alt"></i>
-                </button>
+            <button className="btn btn-secondary reset" onClick={this.reset}>
+                <i className="fas fa-redo-alt"></i>
+            </button>
 
-                <button className="btn btn-secondary remove" onClick={this.props.onRemove}>
-                    <i className="fas fa-trash"></i>
-                </button>
+            <button className="btn btn-secondary remove" onClick={this.props.onRemove}>
+                <i className="fas fa-trash"></i>
+            </button>
             </div>
         );
     }
