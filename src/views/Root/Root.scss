@@ -1,0 +1,18 @@
+.boxWrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  .box {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+
+    &:hover,
+    &.isSelected {
+      outline: 2px solid red;
+    }
+  }
+}
+

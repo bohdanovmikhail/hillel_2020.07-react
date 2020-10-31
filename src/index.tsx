@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import App1 from './App';
-import App2 from './App2';
-import { AppFN, AppClass } from './App3';
+import { Root } from './views/Root';
+
 import * as serviceWorker from './serviceWorker';
+
+// const blueBoxes: IBox[] = Array(4)
+//     .fill(null)
+//     .map(() => ({
+//         bgColor: 'blue',
+//         isSelected: false,
+//     }));
+//
+// const randomBoxes: IBox[] = Array(4)
+//     .fill(null)
+//     .map(() => ({
+//         bgColor: 'green',
+//         isSelected: false,
+//     }));
 
 ReactDOM.render(
   <React.StrictMode>
-    <App1 />
-    {/* <App2 /> */}
-    {/* <AppFN /> */}
-    {/* <AppClass /> */}
+    <Root />
+    {/*<Root boxes={[...blueBoxes, ...randomBoxes]} />*/}
   </React.StrictMode>,
   document.getElementById('root')
 );
